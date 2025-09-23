@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/tommy-le">
       <div className="App" style={{ backgroundImage: `url(${background})` }}>
         <Header />
         <Routes>

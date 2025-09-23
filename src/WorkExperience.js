@@ -7,7 +7,7 @@ function WorkExperience() {
         <h2 className="page-heading">Work Experience</h2>
         <ul className="text-section" style={{listStyleType: 'none'}}>
           <li>
-            <h3> <u> Baker Technologies Co. </u> </h3>
+            <h3> <u>Software Engineer at <i>Baker Technologies Co.</i></u> </h3>
             <ul style={{textAlign: 'left'}}>
               <li>
                 <i>September 2025 - Present</i>
@@ -22,7 +22,7 @@ function WorkExperience() {
           </li>
           <li style={{height: '15px'}}></li>
           <li>
-            <h4> <u>St. Louis Country Club</u> </h4>
+            <h4> <u>Snack Bar Cook at <i>St. Louis Country Club</i></u> </h4>
             <ul style={{textAlign: 'left'}}>
               <li>
                 <i>May 2022 - August 2023 (Seasonal)</i>

@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "homepage": "http://tcdle137.github.io/tommy-le",
   "name": "portfolio",
   "version": "0.1.0",
