@@ -16,7 +16,7 @@ function WorkExperience() {
                 <i>Columbia, MO (Remote)</i>
               </li>
               <li>
-                Contractor work for a range of clients. Used a mixture of skills learned in university and this position to quickly create a variety of software. Used the Windsurf IDE and Google Gemini CLI to expidite the development process while maintaining a level of human oversight and quality standards. High levels of communication and collaborations were utilizes to overcome the challenges of remote work.
+                Contractor work for a range of clients. Used a mixture of skills learned in university and this position to create a variety of software quickly. Used the Windsurf IDE and Google Gemini CLI to expedite the development process while maintaining a level of human oversight and quality standards. High levels of communication and collaboration were utilized to overcome the challenges of remote work.
               </li>
             </ul>
           </li>
