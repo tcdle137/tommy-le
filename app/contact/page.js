@@ -1,7 +1,4 @@
-
-import React from 'react';
-
-function Contact() {
+export default function Contact() {
   return (
     <section className="container mt-5">
       <h2 className="page-heading">Contact Me</h2>
@@ -22,5 +19,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

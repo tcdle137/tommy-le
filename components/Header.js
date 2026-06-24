@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 function Header() {
   return (
@@ -7,26 +6,26 @@ function Header() {
       <div className="container">
         <div className="d-flex justify-content-between align-items-center">
           <h1>
-            <Link to="/" className="text-white text-decoration-none">
+            <Link href="/" className="text-white text-decoration-none">
               Tommy Le
             </Link>
           </h1>
           <nav>
             <ul className="list-inline mb-0" style={{listStyleType: 'none'}}>
               <li className="list-inline-item">
-                <Link to="/about" className="text-white text-decoration-none">About </Link>
+                <Link href="/about" className="text-white text-decoration-none">About </Link>
               </li>
               <li className="list-inline-item">/</li>
               <li className="list-inline-item">
-                <Link to="/projects" className="text-white text-decoration-none">Projects </Link>
+                <Link href="/projects" className="text-white text-decoration-none">Projects </Link>
               </li>
               <li className="list-inline-item">/</li>
               <li className="list-inline-item">
-                <Link to="/work-experience" className="text-white text-decoration-none">Work Experience </Link>
+                <Link href="/work-experience" className="text-white text-decoration-none">Work Experience </Link>
               </li>
               <li className="list-inline-item">/</li>
               <li className="list-inline-item">
-                <Link to="/contact" className="text-white text-decoration-none">Contact Me</Link>
+                <Link href="/contact" className="text-white text-decoration-none">Contact Me</Link>
               </li>
             </ul>
           </nav>

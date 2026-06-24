@@ -1,8 +1,7 @@
-import React from 'react';
-import TCS from './TCS.png';
-import Hockey from './Hockey.jpg';
+import TCS from '../../public/TCS.png';
+import Hockey from '../../public/Hockey.jpg';
 
-function About() {
+export default function About() {
   return (
     <section className="container mt-5">
       <div className="row">
@@ -157,10 +156,10 @@ function About() {
             <h3><u>Personal</u></h3>
             <div className="row">
               <div className="col-md-6 text-center">
-                <img src={TCS} alt="TORENO CORNER STORE Live Photo" style={{height: "35vh"}} />
+                <img src={TCS.src} alt="TORENO CORNER STORE Live Photo" style={{height: "35vh"}} />
               </div>
               <div className="col-md-6 text-center">
-                <img src={Hockey} alt="LTU Blue/White Game Photo" style={{height: "35vh"}} />
+                <img src={Hockey.src} alt="LTU Blue/White Game Photo" style={{height: "35vh"}} />
               </div>
             </div>
             <p>
@@ -172,5 +171,3 @@ function About() {
     </section>
   );
 }
-
-export default About;

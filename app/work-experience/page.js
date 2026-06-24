@@ -1,6 +1,4 @@
-import React from 'react';
-
-function WorkExperience() {
+export default function WorkExperience() {
   return (
     <section>
       <div className="container mt-5">
@@ -40,5 +38,3 @@ function WorkExperience() {
     </section>
   );
 }
-
-export default WorkExperience;

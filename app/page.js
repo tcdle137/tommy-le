@@ -1,7 +1,6 @@
-import React from 'react';
-import headshot from './headshot.jpg';
+import headshot from '../public/headshot.jpg';
 
-function Home() {
+export default function Home() {
   return (
     <div className="container mt-5">
       <div className="row">
@@ -12,11 +11,9 @@ function Home() {
           </div>
         </div>
         <div className="col-md-6">
-          <img src={headshot} alt="headshot" className="profile-image" />
+          <img src={headshot.src} alt="headshot" className="profile-image" />
         </div>
       </div>
     </div>
   );
 }
-
-export default Home;
