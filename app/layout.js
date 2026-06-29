@@ -1,6 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
-import Header from '../oldReactContent/OLD_FILES/Header';
 import Footer from '../components/Footer';
 import background from '../public/HomeBG.png';
 
