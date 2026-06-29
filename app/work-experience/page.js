@@ -1,6 +1,10 @@
 export default function WorkExperience() {
   return (
-    <section>
+    <div>
+      <div style={{textAlign: 'center', padding: '50px', color: 'white'}}>
+        <h2>Page under construction...</h2>
+      </div>
+      {/*
       <div className="container mt-5">
         <h2 className="page-heading">Work Experience</h2>
         <ul className="text-section" style={{listStyleType: 'none'}}>
@@ -35,6 +39,7 @@ export default function WorkExperience() {
           </li>
         </ul>
       </div>
-    </section>
+      */}
+    </div>
   );
 }

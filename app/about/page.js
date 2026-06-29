@@ -3,6 +3,11 @@ import Hockey from '../../public/Hockey.jpg';
 
 export default function About() {
   return (
+    <div>
+      <div style={{textAlign: 'center', padding: '50px', color: 'white'}}>
+        <h2>Page under construction...</h2>
+      </div>
+    {/* 
     <section className="container mt-5">
       <div className="row">
         <div className="col-12">
@@ -169,5 +174,7 @@ export default function About() {
         </div>
       </div>
     </section>
+    */}
+    </div>
   );
 }

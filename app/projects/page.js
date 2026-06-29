@@ -28,6 +28,11 @@ export default function Projects() {
   ];
 
   return (
+    <div>
+      <div style={{textAlign: 'center', padding: '50px', color: 'white'}}>
+        <h2>Page under construction...</h2>
+      </div>
+      {/*
     <section className="container mt-5">
       <h2 className="page-heading">Projects</h2>
       <div>
@@ -51,5 +56,7 @@ export default function Projects() {
         ))}
       </div>
     </section>
+      */}
+    </div>
   );
 }

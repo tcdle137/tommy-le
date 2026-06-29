@@ -1,5 +1,10 @@
 export default function Contact() {
   return (
+    <div>
+      <div style={{textAlign: 'center', padding: '50px',  color: 'white'}}>
+        <h2>Page under construction...</h2>
+      </div>
+      {/*
     <section className="container mt-5">
       <h2 className="page-heading">Contact Me</h2>
       <ul className="page-heading" style={{listStyleType: 'none'}}>
@@ -17,5 +22,7 @@ export default function Contact() {
         </li>
       </ul>
     </section>
+      */}
+    </div>
   );
 }

@@ -27,4 +27,4 @@ yarn-error.log*
 /oldReactContent
 
 # design notes
-design.md
+/design

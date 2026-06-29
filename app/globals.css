@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'LibreBarcode';
+  src: url('/fonts/LibreBarcode128Text-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Megrim';
+  src: url('/fonts/Megrim-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UnicaOne';
+  src: url('/fonts/UnicaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
   background-size: cover;
@@ -69,4 +90,35 @@
   margin-bottom: 2rem;
   text-align: center;
   font-family: 'Georgia', serif;
+}
+
+@media (max-width: 768px) {
+  footer .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .btn {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+footer {
+  position: sticky;
+  bottom: 1rem;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Megrim';
+  background-color: transparent;
+  padding-top: 2rem;
+}
+
+.footer-button {
+  background-color: #1C1C1C;
+  border-color: #792D2D;
+  border-width: 2px;
+  color: white;
 }
