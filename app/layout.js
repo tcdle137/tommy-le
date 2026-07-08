@@ -8,10 +8,15 @@ export const metadata = {
   description: 'Computer Science Undergraduate at Lawrence Technological University',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ backgroundImage: `url(${background.src})`, backgroundSize: 'cover', backgroundAttachment: 'fixed', backgroundPosition: 'center', height: '100vh', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+      <body style={{ backgroundImage: `url(${background.src})`, backgroundSize: '100% 100%', backgroundAttachment: 'fixed', backgroundPosition: 'center', minHeight: '100vh', overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
         {children}
         <Footer />
       </body>

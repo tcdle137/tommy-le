@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: 'LibreBarcode';
   src: url('/fonts/LibreBarcode128Text-Regular.ttf') format('truetype');
@@ -21,10 +22,9 @@
 
 .App {
   text-align: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   background-position: center;
-  min-height: 100vh;
 }
 
 .App-logo {
@@ -32,35 +32,8 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #070d1a;
-  min-height: 15vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  font-family: 'Georgia', serif;
-}
-
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 .text-section {
@@ -81,6 +54,7 @@
   margin: 0 auto;
 }
 
+/*
 .page-heading {
   background-color: rgba(248, 249, 250, 0.8);
   padding: 1rem;
@@ -91,20 +65,7 @@
   text-align: center;
   font-family: 'Georgia', serif;
 }
-
-@media (max-width: 768px) {
-  footer .btn {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 576px) {
-  footer .btn {
-    padding: 0.125rem 0.25rem;
-    font-size: 0.75rem;
-  }
-}
+*/
 
 footer {
   position: sticky;
@@ -122,3 +83,175 @@ footer {
   border-width: 2px;
   color: white;
 }
+
+/*Home Page CSS*/
+.profile-section {
+  background-color: #792d2dd2;
+  color: #E9E7CC;
+  font-family: 'UnicaOne';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 80%;
+  border-color: #1C1C1C;
+  border-width: 8px;
+  border-style: solid;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.profile-title {
+  font-family: 'megrim';
+  font-size: 3.5rem;
+  border-bottom: 2px solid #1c1c1c;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  justify-content: space-between;
+}
+
+/*Projects CSS*/
+.projects-header {
+  background-color: #792D2D;
+  border-color: #E9E7CC;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 105%;
+  border-width: 2px;
+  border-style: solid;
+  font-family: 'Megrim';
+  color: #E9E7CC;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: right;
+  justify-content: space-between;
+}
+
+.projects-sections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1c1c1cdc;
+  border-color: #792D2D;
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+  margin: 1rem;
+  font-family: 'Megrim';
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.projects-contents {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'UnicaOne';
+  color: #E9E7CC;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.projects-contents > * {
+  flex: 1;
+  justify-content: center;
+}
+
+.projects-images {
+  display: flex;
+  flex-direction: row;
+}
+
+.thumbnail {
+  width: 45%;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem;
+  border: 2px solid #792D2D;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile Stylization */
+@media (max-width: 768px) {
+  footer .btn {
+    padding: 0.125rem 0.25rem;
+    font-size: 0.75rem;
+  }
+  .projects-sections {
+    font-size: 1.5rem;
+  }
+  .projects-contents {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .profile-section {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .profile-title{
+    font-size: 1.5rem;
+  }
+}
+
+/*Home Page CSS
+.profile-section {
+  background-color: #792d2dd2;
+  color: #E9E7CC;
+  font-family: 'UnicaOne';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 80%;
+  border-color: #1C1C1C;
+  border-width: 8px;
+  border-style: solid;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.profile-title {
+  font-family: 'megrim';
+  font-size: 3rem;
+  border-bottom: 2px solid #1c1c1c;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1rem;
+}*/

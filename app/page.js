@@ -14,7 +14,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.5 }}
             style={{
               position: 'fixed',
               top: 0,
@@ -34,9 +34,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              style={{ color: '#792D2D', fontFamily: 'LibreBarcode', fontSize: '3.5rem' }}
+              style={{ color: '#792D2D', fontFamily: 'LibreBarcode', fontSize: 'clamp(2rem, 5vw, 3.5rem)' }}
             >
-              Welcome Traveler
+              Welcome Traveler...
             </motion.h2>
           </motion.div>
         )}
@@ -48,29 +48,14 @@ export default function Home() {
         transition={{ duration: 1 }}
       >
         <section>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: '100vh',
-            width: '100%',
-            padding: '20px'
-          }}>
-            <div style={{
-              backgroundColor: '#2C2C2C',
-              padding: '40px',
-              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
-              width: '70%',
-              textAlign: 'left',
-              color: '#E9E7CC'
-            }}>
-              {/*make the main box and all its contents inside of it static, and resize/center it based on window size*/}
-              <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px'}}>
-                <div style={{ display: 'flex', flexDirection: 'column', flex: 1}}>
-                  <h2 style={{ marginBottom: '20px', fontFamily: 'megrim', fontSize: 'clamp(1.5rem, 4vw, 3rem)', borderBottom: '1px solid #792D2D', paddingBottom: '15px'}}>Portfolio Report <span style={{fontFamily: 'LibreBarcode'}}>Tommy Le</span></h2>
-                  <p style={{ marginBottom: '20px', fontFamily: 'UnicaOne', fontSize: 'clamp(0.9rem, 1.5vw, 1.2rem)'}}>My name is Tommy Le, and I am a Senior Computer Science Undergraduate at Lawrence Technological University with a concentration in Software Engineering. I graduated in May 2026 with my Bachelor's degree. I love programming, creating software, and seeing projects come to life from start to finish. You can find more about me under the About page below.</p>
+          <div className="container">
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', alignItems: 'center', height: '90vh'}}>
+              <div className="profile-section">
+                <div>
+                  <h2 className="profile-title">Portfolio Report <span style={{fontFamily: 'LibreBarcode'}}>Tommy Le</span></h2>
+                  <p>My name is Tommy Le, and I am a Senior Computer Science Undergraduate at Lawrence Technological University with a concentration in Software Engineering. I graduated in May 2026 with my Bachelor of Science. I love programming, creating software, and seeing projects come to life from start to finish. You can find more about me under the About page below.</p>
                 </div>
-                <img src={headshot.src} alt="Profile" style={{ width: '30%', maxWidth: '400px', height: 'auto', objectFit: 'contain', borderColor: '#792D2D', borderWidth: '3.5px', borderStyle: 'solid'}} />
+                <img src={headshot.src} alt="Profile" style={{maxWidth:'30%',borderColor: '#1c1c1c', borderWidth: '0.2rem', borderStyle: 'solid'}} />
               </div>
             </div>
           </div>
