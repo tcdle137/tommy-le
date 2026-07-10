@@ -22,17 +22,7 @@
 
 /* Background styling ---------------------------------------------------------------------*/
 .body {
-  background-color: #1c1c1c; 
-  background-image: url('/HomeBG.png'); 
-  background-size: 100% 100%; 
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-position: center; 
-  min-height: 100dvh; 
-  overflow: auto; 
-  display: flex; 
-  flex-direction: column;
+  
 }
 
 /* Footer styling ---------------------------------------------------------------------*/
