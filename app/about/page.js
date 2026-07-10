@@ -3,7 +3,7 @@ import Hockey from '../../public/Hockey.jpg';
 
 export default function About() {
   return (
-    <div>
+    <div className='container'>
       <div style={{textAlign: 'center', padding: '50px', color: 'white'}}>
         <h2>Page under construction...</h2>
       </div>

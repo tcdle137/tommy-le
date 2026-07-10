@@ -20,53 +20,22 @@
   font-style: normal;
 }
 
-.App {
-  text-align: center;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  background-position: center;
+/* Background styling ---------------------------------------------------------------------*/
+.body {
+  background-color: #1c1c1c; 
+  background-image: url('/HomeBG.png'); 
+  background-size: 100% 100%; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-position: center; 
+  min-height: 100dvh; 
+  overflow: auto; 
+  display: flex; 
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-.text-section {
-  background-color: rgba(248, 249, 250, 0.8);
-  padding: 2rem;
-  border: 2px solid #070d1a;
-  border-radius: .25rem;
-  color: #070d1a;
-  font-family: 'Georgia', serif;
-}
-
-.profile-image {
-  border: 2px solid #070d1a;
-  border-radius: .25rem;
-  width: auto;
-  max-height: 75vh;
-  display: block;
-  margin: 0 auto;
-}
-
-/*
-.page-heading {
-  background-color: rgba(248, 249, 250, 0.8);
-  padding: 1rem;
-  border: 2px solid #070d1a;
-  border-radius: .25rem;
-  color: #070d1a;
-  margin-bottom: 2rem;
-  text-align: center;
-  font-family: 'Georgia', serif;
-}
-*/
-
+/* Footer styling ---------------------------------------------------------------------*/
 footer {
   position: sticky;
   bottom: 1rem;
@@ -84,7 +53,7 @@ footer {
   color: white;
 }
 
-/*Home Page CSS*/
+/* Home Page styling ---------------------------------------------------------------------*/
 .profile-section {
   background-color: #792d2dd2;
   color: #E9E7CC;
@@ -113,7 +82,7 @@ footer {
   justify-content: space-between;
 }
 
-/*Projects CSS*/
+/* Projects styling ---------------------------------------------------------------------*/
 .projects-header {
   background-color: #792D2D;
   border-color: #E9E7CC;
@@ -130,6 +99,8 @@ footer {
   padding-right: 1rem;
   text-align: right;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .projects-sections {
@@ -162,9 +133,16 @@ footer {
   font-size: 1.2rem;
   text-align: left;
 }
+
+/* Alternating layout for desktop ---------------------------------------------------------------------*/
+.projects-sections:nth-child(even) .projects-contents {
+  flex-direction: row-reverse;
+}
+
 .projects-contents > * {
   flex: 1;
   justify-content: center;
+  align-items: center;
 }
 
 .projects-images {
@@ -208,7 +186,7 @@ footer {
   cursor: pointer;
 }
 
-/* Mobile Stylization */
+/* Mobile Stylization ---------------------------------------------------------------------*/
 @media (max-width: 768px) {
   footer .btn {
     padding: 0.125rem 0.25rem;
@@ -221,6 +199,20 @@ footer {
     font-size: 1rem;
     flex-direction: column;
   }
+  .projects-header {
+    font-size: 0.7rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .projects-sections:nth-child(even) .projects-contents {
+    flex-direction: column;
+  }
+  .projects-images {
+    flex-direction: column;
+  }
+  .thumbnail {
+    width: 80%;
+  }
   .profile-section {
     font-size: 1rem;
     max-width: 100%;
@@ -230,28 +222,49 @@ footer {
   }
 }
 
-/*Home Page CSS
-.profile-section {
-  background-color: #792d2dd2;
-  color: #E9E7CC;
-  font-family: 'UnicaOne';
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 80%;
-  border-color: #1C1C1C;
-  border-width: 8px;
-  border-style: solid;
-  padding: 1rem;
-  font-size: 1.25rem;
+/*
+.text-section {
+  background-color: rgba(248, 249, 250, 0.8);
+  padding: 2rem;
+  border: 2px solid #070d1a;
+  border-radius: .25rem;
+  color: #070d1a;
+  font-family: 'Georgia', serif;
 }
 
-.profile-title {
-  font-family: 'megrim';
-  font-size: 3rem;
-  border-bottom: 2px solid #1c1c1c;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-}*/
+.profile-image {
+  border: 2px solid #070d1a;
+  border-radius: .25rem;
+  width: auto;
+  max-height: 75vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.page-heading {
+  background-color: rgba(248, 249, 250, 0.8);
+  padding: 1rem;
+  border: 2px solid #070d1a;
+  border-radius: .25rem;
+  color: #070d1a;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.App {
+  text-align: center;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #792D2D;
+}
+*/

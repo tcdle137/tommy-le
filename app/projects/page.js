@@ -6,6 +6,7 @@ import p2_1 from '../../public/p2_1.png';
 import p2_2 from '../../public/p2_2.png';
 import p3_1 from '../../public/p3_1.png';
 import p3_2 from '../../public/p3_2.png';
+import p4_1 from '../../public/p4_1.png';
 import { useState } from 'react';
 
 
@@ -16,6 +17,12 @@ export default function Projects() {
       title: <a href="https://ilovemrsushistl.com" target="_blank" rel="noopener noreferrer">I Love Mr. Sushi (in Olivette, MO)</a>,
       description: 'First independent contract work. Further description coming soon...',
       image: '',
+      image2: ''
+    },
+    {
+      title: 'Guitar Pedal Simulator App/VST',
+      description: 'Senior Capstone Project. Further description coming soon...',
+      image: p4_1.src,
       image2: ''
     },
     {
@@ -48,31 +55,30 @@ export default function Projects() {
           {projectData.map((project, index) => {
             return (
             <div key={index} className="projects-sections">
-            <h1>{project.title}</h1>
-            <div className="projects-contents" style={{flexDirection: index % 2 === 0 ? 'row' : 'row-reverse'}}>
-              <div>
-                <p>{project.description}</p>
-
+              <h1>{project.title}</h1>
+              <div className="projects-contents">
+                <div>
+                  <p>{project.description}</p>
+                </div>
+                <div className="projects-images">
+                  {project.image && (
+                    <img
+                      src={project.image}
+                      alt="Click to enlarge"
+                      className="thumbnail"
+                      onClick={() => setActiveImage(project.image)}
+                    />
+                  )}
+                  {project.image2 && (
+                    <img
+                      src={project.image2}
+                      alt="Click to enlarge"
+                      className="thumbnail"
+                      onClick={() => setActiveImage(project.image2)}
+                    />
+                  )}
+                </div>
               </div>
-              <div className="projects-images">
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt="Click to enlarge"
-                    className="thumbnail"
-                    onClick={() => setActiveImage(project.image)}
-                  />
-                )}
-                {project.image2 && (
-                  <img
-                    src={project.image2}
-                    alt="Click to enlarge"
-                    className="thumbnail"
-                    onClick={() => setActiveImage(project.image2)}
-                  />
-                )}
-              </div>
-            </div>
           </div>
             );
           })}

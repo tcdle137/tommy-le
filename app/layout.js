@@ -16,7 +16,7 @@ export const viewport = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ backgroundImage: `url(${background.src})`, backgroundSize: '100% 100%', backgroundAttachment: 'fixed', backgroundPosition: 'center', minHeight: '100vh', overflow: 'auto', display: 'flex', flexDirection: 'column' }}>
+      <body className="body">
         {children}
         <Footer />
       </body>
