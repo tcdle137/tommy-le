@@ -20,11 +20,6 @@
   font-style: normal;
 }
 
-/* Background styling ---------------------------------------------------------------------*/
-.body {
-  
-}
-
 /* Footer styling ---------------------------------------------------------------------*/
 footer {
   position: sticky;
@@ -40,7 +35,7 @@ footer {
   background-color: #1C1C1C;
   border-color: #792D2D;
   border-width: 2px;
-  color: white;
+  color: #E9E7CC;
 }
 
 /* Home Page styling ---------------------------------------------------------------------*/
@@ -70,6 +65,14 @@ footer {
   margin-bottom: 1rem;
   text-align: left;
   justify-content: space-between;
+}
+
+.profile-headshot {
+  max-width: 30%;
+  border-color: #1c1c1c;
+  border-width: 0.2rem;
+  border-style: solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* Projects styling ---------------------------------------------------------------------*/
@@ -176,6 +179,137 @@ footer {
   cursor: pointer;
 }
 
+/* Visual Novel styling ---------------------------------------------------------------------*/
+.visual-novel-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vn-start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.vn-start-button {
+  font-family: 'Megrim';
+  font-size: 1.5rem;
+  color: #E9E7CC;
+  background-color: #792D2D;
+  border: 2px solid #E9E7CC;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.vn-start-button:hover {
+  background-color: #E9E7CC;
+  color: #792D2D;
+  border-color: #792D2D;
+}
+
+.vn-restart-button {
+  font-family: 'Megrim';
+  font-size: 1.2rem;
+  color: #E9E7CC;
+  background-color: transparent;
+  border: 2px solid #792D2D;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.vn-restart-button:hover {
+  background-color: #792D2D;
+  color: #E9E7CC;
+}
+
+.vn-scene {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 2px solid #792D2D;
+}
+
+.vn-character {
+  position: absolute;
+  bottom: 29%;
+  left: 32%;
+  transform: translateX(-50%) scale(1);
+  max-height: 50%;
+  max-width: 30%;
+  z-index: 5;
+}
+
+.vn-character img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.vn-dialogue-box {
+  width: 90%;
+  max-width: 800px;
+  background-color: rgba(28, 28, 28, 0.95);
+  border: 2px solid #792D2D;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.vn-speaker-name {
+  font-family: 'Megrim';
+  font-size: 1.5rem;
+  color: #792D2D;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.vn-dialogue-text {
+  font-family: 'UnicaOne';
+  font-size: 1.2rem;
+  color: #E9E7CC;
+  line-height: 1.6;
+  min-height: 60px;
+}
+
+.vn-click-indicator {
+  font-family: 'Megrim';
+  font-size: 1.2rem;
+  color: #E9E7CC;
+  text-align: right;
+  margin-top: 10px;
+  opacity: 0.1;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 /* Mobile Stylization ---------------------------------------------------------------------*/
 @media (max-width: 768px) {
   footer .btn {
@@ -206,9 +340,15 @@ footer {
   .profile-section {
     font-size: 1rem;
     max-width: 100%;
+    flex-direction: column;
+    text-align: center;
   }
   .profile-title{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .profile-headshot{
+    max-width: 50%;
   }
 }
 

@@ -53,9 +53,10 @@ export default function Home() {
               <div className="profile-section">
                 <div>
                   <h2 className="profile-title">Portfolio Report <span style={{fontFamily: 'LibreBarcode'}}>Tommy Le</span></h2>
-                  <p>My name is Tommy Le, and I am a Senior Computer Science Undergraduate at Lawrence Technological University with a concentration in Software Engineering. I graduated in May 2026 with my Bachelor of Science. I love programming, creating software, and seeing projects come to life from start to finish. You can find more about me under the About page below.</p>
+                  <p>Welcome Traveler! Nice to see you made it here safely. Navigate to my <a href="/about" style={{color: '#E9E7CC'}}>About</a> page to learn even more about me, but for now here's a quick introduction.</p>
+                  <p>My name is Tommy Le and I recently graduated from Lawrence Technological University, earning my BS in Computer Science with a concentration in Software Engineering. I love building programs and seeing an idea come to life!</p>
                 </div>
-                <img src={headshot.src} alt="Profile" style={{maxWidth:'30%',borderColor: '#1c1c1c', borderWidth: '0.2rem', borderStyle: 'solid'}} />
+                <img className="profile-headshot" src={headshot.src} alt="Profile"/>
               </div>
             </div>
           </div>
