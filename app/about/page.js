@@ -232,6 +232,10 @@ export default function About() {
     setShowFullText(false);
   };
 
+  const handleSkip = () => {
+    setVisualNovelComplete(true);
+  };
+
   const currentScene = dialogueData[currentDialogue];
 
   // Get current background image (handle both single image and array)
@@ -349,6 +353,15 @@ export default function About() {
           <div className="vn-click-indicator">
             Click to continue...
           </div>
+          <button 
+            className="vn-skip-button"
+            onClick={(e) => {
+              e.stopPropagation();
+              handleSkip();
+            }}
+          >
+            Skip Dialogue
+          </button>
         </div>
       </div>
     </div>

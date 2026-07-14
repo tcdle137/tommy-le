@@ -178,7 +178,69 @@ footer {
   font-size: 30px;
   cursor: pointer;
 }
+/* Contact page styling ---------------------------------------------------------------------*/
+.contact-header {
+  background-color: #792D2D;
+  border-color: #E9E7CC;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 105%;
+  border-width: 2px;
+  border-style: solid;
+  font-family: 'Megrim';
+  color: #E9E7CC;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: right;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.contact-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1c1c1cdc;
+  border-color: #792D2D;
+  border-width: 2px;
+  border-style: solid;
+  color: white;
+  margin: 1rem;
+  font-family: 'Megrim';
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'UnicaOne';
+  color: #E9E7CC;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.contact-email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  font-family: 'UnicaOne';
+  color: #E9E7CC;
+  font-size: 1.2rem;
+  text-align: left;
+}
 /* Visual Novel styling ---------------------------------------------------------------------*/
 .visual-novel-container {
   width: 100%;
@@ -273,6 +335,7 @@ footer {
   margin-bottom: 20px;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .vn-speaker-name {
@@ -310,6 +373,26 @@ footer {
   }
 }
 
+.vn-skip-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-family: 'Megrim';
+  font-size: 1rem;
+  color: #E9E7CC;
+  background-color: transparent;
+  border: 1px solid #792D2D;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.vn-skip-button:hover {
+  background-color: #792D2D;
+  color: #E9E7CC;
+}
+
 /* Mobile Stylization ---------------------------------------------------------------------*/
 @media (max-width: 768px) {
   footer .btn {
@@ -345,7 +428,6 @@ footer {
   }
   .profile-title{
     font-size: 2rem;
-    text-align: center;
   }
   .profile-headshot{
     max-width: 50%;
