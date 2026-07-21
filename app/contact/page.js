@@ -28,7 +28,7 @@ export default function Contact() {
               <p>Thanks! We'll be in touch at {email}.</p>
             ) : (
               <form onSubmit={handleSubmit}>
-                <label htmlFor="email">Email</label>
+                <label htmlFor="email">Email (Temporary/Not Currently Working)</label>
                 <input
                   id="email"
                   type="email"
@@ -42,10 +42,10 @@ export default function Contact() {
             )}
           </div>
           <div className='contact-contents'>
-            <a href="https://www.linkedin.com/in/tcdle137">
+            <a href="https://www.linkedin.com/in/tcdle137" target="_blank" rel="noopener noreferrer">
               <img src={linkedin.src} alt="LinkedIn" style={{width: '5rem', height: '5rem', margin: '1rem'}} />
             </a>
-            <a href="https://github.com/tcdle137">
+            <a href="https://github.com/tcdle137" target="_blank" rel="noopener noreferrer">
               <img src={github.src} alt="GitHub" style={{width: '5rem', height: '5rem', margin: '1rem'}} />
             </a>
           </div>

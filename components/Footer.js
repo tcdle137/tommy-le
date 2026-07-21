@@ -9,7 +9,7 @@ function Footer() {
           <Link href="/about" className="btn btn-outline-light btn-lg footer-button">About</Link>
           <Link href="/projects" className="btn btn-outline-light btn-lg footer-button">Projects</Link>
           <Link href="/work-experience" className="btn btn-outline-light btn-lg footer-button">Work Experience</Link>
-          <Link href="/contact" className="btn btn-outline-light btn-lg footer-button">Contact Me</Link>
+          <Link href="/contact" className="btn btn-outline-light btn-lg footer-button">Contact</Link>
         </nav>
       </div>
     </footer>
